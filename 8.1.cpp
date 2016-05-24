@@ -1,7 +1,7 @@
-/*8.1. Crie	uma	função	que	determine	se	um	dado	número	de	entrada	é	primo ou	não.
-Exemplos	de	saída:	
-“O	número	X	é primo.”
-“O	número	Y	não	eh	primo.”*/
+/*8.1. Crie	uma	funÃ§Ã£o	que	determine	se	um	dado	nÃºmero	de	entrada	Ã©	primo ou	nÃ£o.
+Exemplos	de	saÃ­da:	
+â€œO	nÃºmero	X	Ã© primo.â€
+â€œO	nÃºmero	Y	nÃ£o	eh	primo.â€*/
 #include<stdio.h>
 #include<conio.h>
 #include<locale.h>
@@ -12,10 +12,9 @@ int nprimo(int);
 int main(){
 	int num;
 	
-	printf("Informe um número:\n");
+	printf("Informe um nÃºmero:");
 	
 	scanf("%d",&num);
-	
 	setlocale (LC_ALL, "portuguese");
 
 if(num%1==0 && num%num==0){
@@ -31,13 +30,13 @@ if(num%1==0 && num%num==0){
 
 int primo(int num){
 	
-	int verificacao = printf("O número %d primo!",num);
+	int verificacao = printf("O nÃºmero %d primo!",num);
     
     return verificacao;
 }
 int nprimo(int num){
 	
-	int verificacao= 	printf("O número %d não é primo!",num);
+	int verificacao=printf("O nÃºmero %d nÃ£o Ã© primo!",num);
 	
 	return verificacao;
 }
